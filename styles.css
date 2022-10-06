@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+:root {
+    --altura-header: 100px;
+    --altura-footer: 0px;
+}
+
+.contenedor-principal-crear {
+    min-height: calc(100% - (var(--altura-header) + var(--altura-footer)));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contenedor-usuarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h1.crear-usuario {
+    text-align: center;
+}
+
+h1.ver-usuarios {
+    text-align: center;
+}
+
+.row {
+    align-items: center;
+}
+
+.card {
+    margin: 10px;
+    width: 300px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px black;
+}
+
+form {
+    border-radius: 30px;
+    width: 50%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.navbar {
+    height: var(--altura-header);
+    background-color: transparent;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 24px;
+}
+
+footer {
+    height: var(--altura-footer);
+    background: aqua;
+}
+
+.card-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
