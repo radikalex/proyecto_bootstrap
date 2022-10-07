@@ -8,7 +8,7 @@ for(let i = 0; i < users.length; i++) {
     div_card.className = "card"
     div_card.innerHTML = 
     `       <div class="card-header">
-                Usuario ${i}
+                Usuario ${i + 1}
             </div>
             <img src="no-image.png">
             <ul class="list-group list-group-flush">
