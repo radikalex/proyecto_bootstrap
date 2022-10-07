@@ -10,6 +10,7 @@ const input_nombre = document.getElementById("name");
 const input_email = document.getElementById('email');
 const input_pass1 = document.getElementById('password1');
 const input_pass2 = document.getElementById('password2');
+const input_link_img = document.getElementById('link_img');
 
 const users = JSON.parse(localStorage.getItem("users"));
 const myArray = users || [];
@@ -41,14 +42,19 @@ function onSubmit(e) {
     const email = input_email.value;
     const pass1 = input_pass1.value;
     const pass2 = input_pass2.value;
+    let link_img = input_link_img.value;
 
     if (! validacionesCorrectas(nombre, email, pass1, pass2)) return;
 
+    // Comprobar input adicional de link image
+    if(link_img === "" ) link_img = "no-image.png"; 
+
     const person = {
-        nombre,
+        nombre, // ES6 --> Esto es lo mismo que poner nombre: nombre
         email,
         pass1,
-        pass2
+        pass2,
+        link_img
     }
     myArray.push(person);
     localStorage.setItem("users", JSON.stringify(myArray));
@@ -56,8 +62,7 @@ function onSubmit(e) {
     // Deshabilitar el botón para evitar la posibilidad de crear varios usuarios
     sendButton.disabled = "true";
 
-    // Mostrar mensaje de usuario creado correctament
-
+    // Mostrar mensaje de usuario creado correctamente
     // Vaciar div alertas
     while (div_exito.firstChild) {
         div_exito.removeChild(div_exito.firstChild);
@@ -82,7 +87,7 @@ function validacionesCorrectas(nombre, email, pass1, pass2) {
 
     if(nombre === "" || email === "" || pass1 === "" || pass2 === "") {
         invalidarInputs(nombre === "", email === "", pass1 === "", pass2 === "");
-        crearAlertaValidacion("Es obligatorio rellenar todos los campos", 3000);
+        crearAlertaValidacion("Es obligatorio rellenar todos los campos obligatorios", 3000);
         return false;
     }
     if( ! /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/gm.test(email) ) {
