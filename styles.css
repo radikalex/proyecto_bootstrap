@@ -48,6 +48,9 @@ h1.crear-usuario {
 
 h1.ver-usuarios {
     text-align: center;
+    color: white;
+    font-size: 80px;
+    margin: 15px auto;
 }
 
 .row {
@@ -77,8 +80,10 @@ form {
     justify-content: flex-end !important;
 }
 
-ul {
+.enlaces ul {
     background-color: none;
+    position: relative;
+    margin-right: 10%;
 }
 
 .navbar .container-fluid {
@@ -86,14 +91,15 @@ ul {
     justify-content: space-around;
 }
 
-li {
-    list-style: none;
+.enlaces li {
+    margin-left: 100px;
 }
 
 .navbar-brand {
     font-family: Michland;
     color: white;
-    font-size: 50px;
+    font-size: 70px;
+    margin-left: 10%;
 }
 
 .nav-link {
@@ -105,8 +111,8 @@ li {
 }
 
 .enlaces {
-    background-color: red;
     width: 100%;
+    gap: 20px;
     display: flex;
     justify-content: flex-end;
 }
@@ -129,7 +135,6 @@ li {
     width: 80%;
     margin: auto 10%;
 }
-
 
 footer {
     height: var(--altura-footer);
