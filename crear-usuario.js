@@ -47,7 +47,7 @@ function onSubmit(e) {
     if (! validacionesCorrectas(nombre, email, pass1, pass2)) return;
 
     // Comprobar input adicional de link image
-    if(link_img === "" ) link_img = "no-image.png"; 
+    if(link_img.trim() === "" ) link_img = "no-image.png"; 
 
     const person = {
         nombre, // ES6 --> Esto es lo mismo que poner nombre: nombre

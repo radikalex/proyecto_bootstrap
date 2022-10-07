@@ -2,6 +2,11 @@ html, body {
     height: 100%;
 }
 
+@font-face {
+    font-family: "Michland";
+    src: url(assets/Michland\ Script.otf);
+}
+
 body {
     background: #00c6ff;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
@@ -68,16 +73,42 @@ form {
     height: var(--altura-header);
     background-color: transparent;
     padding: 0px 10px;
+    display: flex;
+    justify-content: flex-end !important;
+}
+
+ul {
+    background-color: none;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-around;
 }
 
 li {
     list-style: none;
 }
 
+.navbar-brand {
+    font-family: Michland;
+    color: white;
+    font-size: 50px;
+}
+
 .nav-link {
     color: white !important;
+    display: flex;
+    justify-content: center;
     font-size: 24px;
     position: relative;
+}
+
+.enlaces {
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .nav-link::after {
@@ -87,6 +118,7 @@ li {
     left: 0;
     width: 0%;
     height: 3px;
+    margin: auto 10%;
     background: #00FFDD;
     transition: width 0.8s;
     border-radius: 10px;
@@ -94,7 +126,8 @@ li {
 }
 
 .nav-link:hover::after {
-    width: 100%;
+    width: 80%;
+    margin: auto 10%;
 }
 
 
