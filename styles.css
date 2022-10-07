@@ -51,6 +51,7 @@ h1.ver-usuarios {
     color: white;
     font-size: 80px;
     margin: 15px auto;
+    font-family: "Michland";
 }
 
 .row {
@@ -63,6 +64,16 @@ h1.ver-usuarios {
     border-radius: 20px;
     padding-bottom: 10px;
     box-shadow: 5px 5px black;
+    border: 6px solid black;
+}
+
+.list-group-item {
+    text-align: center;
+}
+
+.card .list-group {
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
 }
 
 form {
@@ -70,6 +81,7 @@ form {
     width: 50%;
     height: 100%;
     background-color: whitesmoke;
+    box-shadow: 4px 4px 6px;
 }
 
 .navbar {
@@ -144,6 +156,10 @@ footer {
     text-align: center;
     font-weight: bold;
     font-size: 25px;
+}
+
+.img-card {
+    border-top: 4px solid black;
 }
 
 #footy {

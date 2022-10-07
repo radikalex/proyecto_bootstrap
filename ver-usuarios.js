@@ -19,7 +19,7 @@ function actualizarDivUsuarios() {
       `       <div class="card-header">
                   Usuario ${i + 1}
               </div>
-              <img src="${users[i].link_img}">
+              <img class="img-card" src="${users[i].link_img}">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item"><b>Nombre:</b> ${users[i].nombre}</li>
                 <li class="list-group-item"><b>Correo:</b> ${users[i].email}</li>
