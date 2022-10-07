@@ -15,7 +15,7 @@ body {
 
 :root {
     --altura-header: 100px;
-    --altura-footer: 0px;
+    --altura-footer: 50px;
 }
 
 .contenedor-principal-crear {
@@ -138,11 +138,37 @@ form {
 
 footer {
     height: var(--altura-footer);
-    background: aqua;
 }
 
 .card-header {
     text-align: center;
     font-weight: bold;
     font-size: 25px;
+}
+
+#footy {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 15px;
+
+}
+
+.social-logo {
+    width: 30px;
+}
+
+#social-media {
+    display: flex;
+    gap: 8px;
+}
+
+.numero-tlf {
+    color: white;
+}
+
+.email {
+    color: white;
 }
