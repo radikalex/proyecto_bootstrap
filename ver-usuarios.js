@@ -21,8 +21,8 @@ function actualizarDivUsuarios() {
               </div>
               <img class="img-card" src="${users[i].link_img}">
               <ul class="list-group list-group-flush">
-                <li class="list-group-item"><b>Nombre:</b> ${users[i].nombre}</li>
-                <li class="list-group-item"><b>Correo:</b> ${users[i].email}</li>
+                <li class="list-group-item"><div><b>Nombre:</b></div> <div>${users[i].nombre}</div></li>
+                <li class="list-group-item"><div><b>Correo:</b></div> <div>${users[i].email}</div></li>
               </ul>
               <div class="contenedor-eliminar">
                 <button class="btn btn-primary boton-eliminar" onclick="eliminarUsuario(event, this)" id="boton_${i}">
