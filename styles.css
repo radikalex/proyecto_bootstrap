@@ -68,7 +68,7 @@ h1.ver-usuarios {
 }
 
 .list-group-item {
-    text-align: center;
+    text-align: centerg;
 }
 
 .card .list-group {
@@ -119,7 +119,11 @@ form {
     display: flex;
     justify-content: center;
     font-size: 24px;
-    position: relative;
+    position: relative;    
+}
+
+.nav-link:hover {
+    text-shadow: 0px 0px 8px #f6f7f9;
 }
 
 .enlaces {
@@ -133,7 +137,7 @@ form {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 0; 
     width: 0%;
     height: 3px;
     margin: auto 10%;
@@ -141,11 +145,13 @@ form {
     transition: width 0.8s;
     border-radius: 10px;
     box-shadow: 0px 0px 6px #00FFDD;  
+    
 }
 
 .nav-link:hover::after {
     width: 80%;
     margin: auto 10%;
+    
 }
 
 footer {
@@ -157,9 +163,8 @@ footer {
     font-weight: bold;
     font-size: 25px;
     border-radius: 14px 14px 0px 0px !important;
-    background: #667db6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
+
 }
 
 .img-card {
