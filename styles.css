@@ -18,11 +18,24 @@ body {
     --altura-footer: 50px;
 }
 
+.navbar-toggler {
+    color: white;
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url('./assets/images/desplegable-boton.png');
+}
+
 .contenedor-principal-crear {
     min-height: calc(100% - (var(--altura-header) + var(--altura-footer)));
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.siguenos {
+    color: white;
 }
 
 .boton-eliminar {
@@ -68,7 +81,7 @@ h1.ver-usuarios {
 }
 
 .list-group-item {
-    text-align: centerg;
+    text-align: center;
 }
 
 .card .list-group {
@@ -164,7 +177,6 @@ footer {
     font-size: 25px;
     border-radius: 14px 14px 0px 0px !important;
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
-
 }
 
 .img-card {
@@ -178,11 +190,13 @@ footer {
     align-items: center;
     padding-top: 140px;
     gap: 15px;
-
 }
 
 .social-logo {
     width: 30px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
 }
 
 #social-media {
@@ -201,4 +215,27 @@ footer {
 .sin-usuarios {
     color: white;
     margin: 25vh auto;
+}
+
+@media only screen and (max-width: 400px) {
+    form {
+      font-size: 12px;
+      width: 80%;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input, input::placeholder {
+        font-size: 12px;
+    }
+
+    .numero-tlf {
+        font-size: 12px;
+    }
 }

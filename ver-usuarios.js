@@ -10,7 +10,6 @@ function actualizarDivUsuarios() {
 
   // Obtener datos del localStorage
   users = JSON.parse(localStorage.getItem("users"));
-  console.log(users)
 
   if(users) {
     // Rellenar div con los datos del local Storage
