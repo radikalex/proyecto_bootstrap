@@ -44,7 +44,7 @@ function actualizarDivUsuarios() {
 
 function eliminarUsuario(e, boton)  {
   e.preventDefault();
-  const index = boton.id[boton.id.length - 1]
+  const index = boton.id[boton.id.length - 1];
   users.splice(index, 1);
   localStorage.setItem("users", JSON.stringify(users)); // Modificar el localStorage
   actualizarDivUsuarios();

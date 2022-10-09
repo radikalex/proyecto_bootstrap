@@ -63,11 +63,6 @@ function onSubmit(e) {
     sendButton.disabled = "true";
 
     // Mostrar mensaje de usuario creado correctamente
-    // Vaciar div alertas
-    while (div_exito.firstChild) {
-        div_exito.removeChild(div_exito.firstChild);
-    }
-
     // Crear alerta
     const pop_alert = document.createElement('div');
     pop_alert.className = "alert alert-success mt-3";
@@ -77,7 +72,6 @@ function onSubmit(e) {
     
     // Borrar alerta tras 3 segundos
     setTimeout(() => {
-        pop_alert.remove();
         location.href = "ver-usuarios.html"
     }, 3000);
 
